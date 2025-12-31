@@ -1,0 +1,18 @@
+---
+const { title = "Dani Ikhsan" } = Astro.props;
+import "../styles/global.css"
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <main class="mx-auto max-w-2xl px-6 py-12">
+        <slot/>
+    </main>
+</body>
+</html>
